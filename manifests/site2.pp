@@ -2,9 +2,9 @@ node 'server' {
 	file{'/tmp/hello':
 		content => "hola mundo",
 	}
-	exec{"aptitude install bind9":
-		command => '/usr/bin/aptitude install bind9',
-	}
+#	exec{"aptitude install bind9":
+#		command => '/usr/bin/aptitude install bind9',
+#	}
 	exec{'hostname server':
 		command => '/bin/hostname server',
 	}
